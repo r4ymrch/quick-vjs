@@ -44,14 +44,14 @@ Make sure your system (Linux / MacOS / Windows) has these dependencies installed
    
    ### Linux
    
-   1. x64 architecture
-      ```bash
-      bun build --compile --minify --bytecode --target=bun-linux-x64 ./src/index.ts --outfile ./dist/linux/x64/quick-vjs
-      ```
-   2. arm64 architecture
-      ```bash
-      bun build --compile --minify --bytecode --target=bun-linux-arm64 ./src/index.ts --outfile ./dist/linux/arm64/quick-vjs
-      ```
+   x64 architecture
+   ```bash
+   bun build --compile --minify --bytecode --target=bun-linux-x64 ./src/index.ts --outfile ./dist/linux/x64/quick-vjs
+   ```
+   arm64 architecture
+   ```bash
+   bun build --compile --minify --bytecode --target=bun-linux-arm64 ./src/index.ts --outfile ./dist/linux/arm64/quick-vjs
+   ```
 
    ### Windows x64
 
@@ -61,14 +61,14 @@ Make sure your system (Linux / MacOS / Windows) has these dependencies installed
 
    ### MacOS
    
-   1. x64 architecture
-      ```bash
-      bun build --compile --minify --bytecode --target=bun-darwin-x64 ./src/index.ts --outfile ./dist/macos/x64/quick-vjs
-      ```
-   2. arm64 architecture
-      ```bash
-      bun build --compile --minify --bytecode --target=bun-darwin-arm64 ./src/index.ts --outfile ./dist/macos/arm64/quick-vjs
-      ```
+   x64 architecture
+   ```bash
+   bun build --compile --minify --bytecode --target=bun-darwin-x64 ./src/index.ts --outfile ./dist/macos/x64/quick-vjs
+   ```
+   arm64 architecture
+   ```bash
+   bun build --compile --minify --bytecode --target=bun-darwin-arm64 ./src/index.ts --outfile ./dist/macos/arm64/quick-vjs
+   ```
 
 3. Your app will be compiled to `./dist/[OS]/[Arch]/quick-vjs`.
 4. Place the compiled app whatever you want. Example for linux users, you can place it in `~/.local/bin` for easy access in terminal.
