@@ -1,0 +1,90 @@
+export const htmlTemplate: string = `<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>My Website</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>👋 Hello from quick-vjs!</h1>
+      <p>Thanks for using quick-vjs. If you like this project, please give me a star :)</p>
+      <button type="button" id="link-btn">🌟 Give Me a Star 🌟</button>
+    </div>
+    <script src="index.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+</html>`;
+
+export const cssTemplate: string = `*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #252525;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  border: 2px solid #55555588;
+  color: #efefef;
+  background-color: #303030;
+  box-shadow: 0px 0px 32px 10px rgba(0, 0, 0, 0.2);
+}
+
+.container h1 {
+  cursor: default;
+  font-family: monospace;
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.container p {
+  cursor: default;
+  font-family: monospace;
+  font-size: 0.9rem;
+  text-align: center;
+  opacity: 0.75;
+}
+
+.container button {
+  cursor: pointer;
+  font-family: monospace;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-top: 2rem;
+  padding: 1rem;
+  color: #efefef;
+  background-color: #353535;
+  border-radius: 1rem;
+  outline: none;
+  border: 1px solid #454545;
+  box-shadow: 0px 6px 0px 0px #454545;
+  transition: all 0.4s ease-in-out;
+}
+
+.container button:hover {
+  color: #252f25;
+  background-color: #55ff65;
+}
+
+.container button:active {
+  transform: translateY(6px);
+  box-shadow: 0px 0px 0px 0px #454545;
+}`;
+
+export const jsTemplate: string = `document.getElementById("link-btn").addEventListener("click", function () {
+   setTimeout(function () {
+      window.open("https://github.com/r4ymrch", "_blank");
+   }, 300);
+});`;
