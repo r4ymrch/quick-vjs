@@ -17,8 +17,8 @@
 ```text
 project-name/
 ├── index.html          # Main HTML file
-├── style.css           # Main HTML file
-├── index.js            # Main HTML file
+├── style.css           # Main CSS file
+├── index.js            # Main JS file
 └── quick-vjs.json      # Metadata and project configuration
 ```
 
