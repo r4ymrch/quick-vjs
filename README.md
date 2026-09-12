@@ -61,7 +61,7 @@ You can download the compiled binary in the [Release](https://github.com/r4ymrch
 
 ### 1. Initialize project
 
-1. Change working directory
+1. Run
   ```bash
   quick-vjs init
   ```
