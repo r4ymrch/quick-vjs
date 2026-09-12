@@ -46,7 +46,7 @@ You can download the compiled binary in the [Release](https://github.com/r4ymrch
 
 2. Compile the source code
 
-   ### Make sure you has Bun installed in your system!
+   **Make sure you has Bun installed in your system!**
    
    ```bash
    bun build --compile --minify ./src/index.ts --outfile ./dist/quick-vjs
