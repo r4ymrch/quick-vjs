@@ -44,37 +44,15 @@ You can download the compiled binary in the [Release](https://github.com/r4ymrch
    cd quick-vjs
    ```
 
-2. Compile the source code according to your OS architecture (Linux/MacOS/Windows)
+2. Compile the source code
+
+   ### Make sure you has Bun installed in your system!
    
-   ### Linux
-   
-   x64 architecture
    ```bash
-   bun build --compile --minify --bytecode --target=bun-linux-x64 ./src/index.ts --outfile ./dist/linux/x64/quick-vjs
-   ```
-   arm64 architecture
-   ```bash
-   bun build --compile --minify --bytecode --target=bun-linux-arm64 ./src/index.ts --outfile ./dist/linux/arm64/quick-vjs
+   bun build --compile --minify ./src/index.ts --outfile ./dist/quick-vjs
    ```
 
-   ### Windows x64
-
-   ```bash
-   bun build --compile --minify --bytecode --target=bun-windows-x64 ./src/index.ts --outfile ./dist/windows/quick-vjs
-   ```
-
-   ### MacOS
-   
-   x64 architecture
-   ```bash
-   bun build --compile --minify --bytecode --target=bun-darwin-x64 ./src/index.ts --outfile ./dist/macos/x64/quick-vjs
-   ```
-   arm64 architecture
-   ```bash
-   bun build --compile --minify --bytecode --target=bun-darwin-arm64 ./src/index.ts --outfile ./dist/macos/arm64/quick-vjs
-   ```
-
-3. Your app will be compiled to `./dist/[OS]/[Arch]/quick-vjs`.
+3. Your app will be compiled to `./dist/quick-vjs`.
 4. Place the compiled app whatever you want. Example for linux users, you can place it in `~/.local/bin` for easy access in terminal.
 
 ---
