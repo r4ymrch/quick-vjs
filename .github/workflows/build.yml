@@ -13,13 +13,13 @@ jobs:
         include:
           - os: windows-latest
             artifact_name: quick-vjs-windows-x64.exe
-            compile_cmd: bun build --compile --minify --bytecode --target=bun-windows-x64 ./src/index.ts --outfile ./dist/windows/quick-vjs-windows-x64.exe
+            compile_cmd: bun build ./src/index.ts --compile --minify --bytecode --outfile quick-vjs-windows-x64.exe
           - os: macos-latest
             artifact_name: quick-vjs-macos-arm64
-            compile_cmd: bun build --compile --minify --bytecode --target=bun-darwin-arm64 ./src/index.ts --outfile ./dist/macos/arm64/quick-vjs-macos-arm64
-          - os: macos-13 # Runner Intel x64
+            compile_cmd: bun build ./src/index.ts --compile --minify --bytecode --outfile quick-vjs-macos-arm64
+          - os: macos-13
             artifact_name: quick-vjs-macos-x64
-            compile_cmd: bun build --compile --minify --bytecode --target=bun-darwin-x64 ./src/index.ts --outfile ./dist/macos/x64/quick-vjs-macos-x64
+            compile_cmd: bun build ./src/index.ts --compile --minify --bytecode --outfile quick-vjs-macos-x64
 
     runs-on: ${{ matrix.os }}
 
@@ -42,4 +42,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: ${{ matrix.artifact_name }}
-          path: ${{ matrix.artifact_name }}
+          path: ./${{ matrix.artifact_name }}
