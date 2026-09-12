@@ -32,7 +32,11 @@ Make sure your system (Linux / MacOS / Windows) has these dependencies installed
 
 ---
 
-## Build and Installation
+## Installation
+
+You can download the compiled binary in the [Release](https://github.com/r4ymrch/quick-vjs/releases) page or compile the source code. But i'm highly recommended you to compile it manually according to your platform to reduce compatibility issues.
+
+## Build from source
 
 1. Clone this repo.
    ```bash
