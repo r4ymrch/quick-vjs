@@ -1,6 +1,6 @@
 # Quick VJS
 
-**Quick VJS** is a simple tools for instantly creating *boilerplate* Vanilla JavaScript projects. This script automates the creation of basic HTML/CSS/JS files, project configuration, and includes developer server local (*live reload*) without complicated configuration.
+**Quick VJS** is a simple tools for instantly creating *boilerplate* Vanilla JavaScript projects. This script automates the creation of basic HTML/CSS/JS files, project configuration, and includes developer server local (*live reload*) without complicated configuration. This project was created using `bun init` in bun v1.3.14. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
 
 ---
 
